@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     getFilteredArray(genre) {
-      if (genre === "Tutti") {
+      if (genre === "0") {
         this.filteredSongList = this.songList;
         return this.songList;
       }

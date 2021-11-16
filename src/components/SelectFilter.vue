@@ -1,12 +1,12 @@
 <template>
   <div class="select_container text-center m-auto w-25 mt-5">
-    <h5 class="">Filtra per <strong>Genere</strong></h5>
+    <h5>Filtra per <strong>Genere</strong></h5>
     <select
       v-model="filterValue"
       @change="onSelectFilterChange"
       class="form-select"
     >
-      <option value="Tutti" selected>Tutti</option>
+      <option value="0" selected>Tutti</option>
       <option v-for="genre in filteredByGenre" :key="genre" :value="genre">
         {{ genre }}
       </option>
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      filterValue: "Tutti",
+      filterValue: 0,
     };
   },
   methods: {

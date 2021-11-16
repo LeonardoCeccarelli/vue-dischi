@@ -1,0 +1,15 @@
+.select_container {
+    select {
+
+        background-color: $secondaryBg;
+        color: white;
+        border: 2px solid rgb(30 215 96);
+        background-image: none;
+
+        &:focus {
+            background-color: $secondaryBg;
+            border: 2px solid rgb(30 215 96);
+            box-shadow: none;
+        }
+    }
+}
